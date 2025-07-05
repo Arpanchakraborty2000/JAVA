@@ -1,44 +1,22 @@
 package Abhik;
-
-import java.util.Stack;
-
+import java.util.*;
 class Solution {
-    public int evalRPN(String[] tokens) {
-        Stack <Integer> s=new Stack<>();
-        for(String st:tokens){
-            if(st.equals("+")){
-                int a =s.pop();
-                int b=s.pop();
-                s.push(a+b);
+    public int largestRectangleArea(int[] heights) {
+        int l =0;
+        int r =heights.length-1;
+        int area=0;
+        while(l<r) {
+            int a=(r-l)*Math.min(heights[r], heights[l]);
+            if(area<a){
+                area=a;
             }
-            else if(st.equals("-")){
-                int a =s.pop();
-                int b=s.pop();
-                s.push(b-a);
-
-            }
-            else if(st.equals("*")){
-                int a =s.pop();
-                int b=s.pop();
-                s.push(a*b);
-            }
-            else if(st.equals("/")){
-                int a =s.pop();
-                int b=s.pop();
-                s.push(b/a);
+            if(heights[l]>=heights[r]){
+                r--;
             }
             else{
-                s.push(Integer.parseInt(st));
+                l++;
             }
-
-        }
-        return s.pop();
-    }
-    public static void main(String[] args) {
-        Solution o=new Solution();
-        String a[]={"1","2","+","3","*","4","-"};
-        System.out.println(o.evalRPN(a));
-        
-
+        } 
+        return area;
     }
 }
