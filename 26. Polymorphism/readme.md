@@ -29,9 +29,9 @@ class Calculator {
     }
 }
 
+---
 
-
-## 🔁 2. Run-Time Polymorphism (Method Overriding)
+### 🔁 2. Run-Time Polymorphism (Method Overriding)
 
 - Resolved at **runtime**
 - Subclass overrides the parent class method
