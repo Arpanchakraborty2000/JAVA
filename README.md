@@ -7,7 +7,7 @@ This repository is a **comprehensive collection of Java programs**, notes, and c
 
 ## 🧑‍💻 Author
 
-**Arpan Chakraborty**  
+## Arpan Chakraborty   
 *Java Learner | Backend Developer Enthusiast*
 
 ---
