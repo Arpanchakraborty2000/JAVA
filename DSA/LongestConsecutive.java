@@ -1,4 +1,4 @@
-package Abhik;
+package DSA;
 import java.util.*;
 public class LongestConsecutive {
     public int longestConsecutive(int[] nums) {
