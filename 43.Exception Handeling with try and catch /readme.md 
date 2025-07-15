@@ -1,0 +1,67 @@
+
+# ⚠️ Exception Handling in Java
+
+## 📘 What is Exception Handling?
+
+**Exception Handling** in Java is a mechanism to handle runtime errors (exceptions), so the normal flow of the application can be maintained.  
+It helps prevent the program from crashing and provides a way to deal with unexpected issues.
+
+---
+
+## ✅ Common Exception Types:
+
+- **ArithmeticException** – e.g., divide by zero  
+- **NullPointerException** – calling methods on null object  
+- **ArrayIndexOutOfBoundsException** – accessing array index out of bounds  
+- **NumberFormatException** – converting invalid string to number  
+- **IOException** – input/output failures
+
+---
+
+## 🔧 Java Exception Handling Keywords:
+
+| Keyword | Use |
+|---------|-----|
+| `try`   | Wraps code that may throw an exception |
+| `catch` | Handles the exception |
+| `finally` | Executes code regardless of exception |
+| `throw` | Used to throw an exception manually |
+| `throws` | Declares exceptions in method signature |
+
+---
+
+## ✅ Basic Example of Exception Handling:
+
+```java
+public class ExceptionExample {
+    public static void main(String[] args) {
+        try {
+            int a = 10;
+            int b = 0;
+            int result = a / b; // This will throw ArithmeticException
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Cannot divide by zero!");
+        } finally {
+            System.out.println("This block always executes.");
+        }
+    }
+}
+```
+
+---
+
+## 🧠 Output:
+
+```
+Error: Cannot divide by zero!
+This block always executes.
+```
+
+---
+
+## 🎯 Why Use Exception Handling?
+
+- Increases program reliability  
+- Helps in debugging and fixing issues gracefully  
+- Avoids abrupt termination of the program
