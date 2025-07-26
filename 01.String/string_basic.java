@@ -9,5 +9,6 @@ public class string_basic {
         //sc.next() only use the single word
 
         System.out.println("The name is : "+name);
+       
     }
 }
