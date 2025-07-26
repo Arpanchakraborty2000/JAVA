@@ -59,13 +59,10 @@ new Calculator().showSquare(5);
 
 ## 🚫 Limitations
 Cannot reuse the object.
-
 Not suitable when object is needed multiple times.
 ---
 ## ✅ When to Use
 One-time operations.
-
 Passing objects as parameters to methods.
-
 Event handling in GUI (e.g., with anonymous inner classes).
 ---
